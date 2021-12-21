@@ -1,0 +1,28 @@
+<form action="/registration" method="post" style="border:1px solid #ccc">
+  <div class="container">
+    <h1>Registration</h1>
+    <p></p>
+    <hr>
+
+    <label for="email"><b>Name</b></label>
+    <input type="text" placeholder="Enter your name" name="username" required>
+    <label for="email"><b>Surname</b></label>
+    <input type="text" placeholder="Enter your name" name="surname" required>
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter password" name="psw" required>
+    <label for="psw-repeat"><b>Repeat password</b></label>
+    <input type="password" placeholder="Repeat password" name="psw-repeat" required>
+
+<!--    <label for="psw-repeat"><b>Repeat password</b></label>-->
+<!--    <input type="password" placeholder="Repeat password" name="psw-repeat" required>-->
+
+    <label>
+      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+    </label>
+
+    <div class="clearfix">
+      <button type="button" class="cancelbtn">Cancel</button>
+      <button type="submit" class="signupbtn">Registration</button>
+    </div>
+  </div>
+</form>

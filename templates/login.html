@@ -1,0 +1,31 @@
+
+{% for category, message in  get_flashed_messages(with_categories=true) %}
+<spam class="{{ category }}">{{ message }}</spam>
+{% endfor %}
+
+<form action="" method="post">
+    <form action="/login" method="post" style="border:1px solid #ccc">
+        <div class="container">
+            <h1>Log in</h1>
+            <p></p>
+            <hr>
+
+            <label for="email"><b>Name</b></label>
+            <input type="text" placeholder="Enter your name" name="username" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter password" name="psw" required>
+
+            <!--    <label for="psw-repeat"><b>Repeat password</b></label>-->
+            <!--    <input type="password" placeholder="Repeat password" name="psw-repeat" required>-->
+
+            <label>
+                <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+            </label>
+
+            <div class="clearfix">
+
+                <button type="submit" class="signupbtn">log in</button>
+            </div>
+        </div>
+    </form>

@@ -15,7 +15,7 @@ RUN python -m pip install --upgrade pip \
     && apt-get update \
     && apt-get -y install libpq-dev gcc \
     && pip install psycopg2
-    &&pip install -r requirements.txt
+    && pip install -r requirements.txt
 
 EXPOSE 5000
 EXPOSE 5432

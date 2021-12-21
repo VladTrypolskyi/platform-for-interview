@@ -18,7 +18,7 @@ RUN python -m pip install --upgrade pip \
     &&pip install -r requirements.txt
 
 EXPOSE 5000
-# EXPOSE 5432
+EXPOSE 5432
 
 # CMD psql --host=192.168.64.2/24 --port=5432 --username=vlad -c "SELECT 'SUCCESS !!!';"
 
